@@ -1,0 +1,26 @@
+{
+  "name": "granary-starter-kit",
+  "version": "1.0.0-pre-alpha",
+  "description": "A starter kit for Tezos blockchain development",
+  "scripts": {
+    "init": "granary init",
+    "start": "granary node start",
+    "stop": "granary node stop",
+    "clean": "granary node clean && granary client clean",
+    "activate-alpha": "./activate_alpha.sh"
+  },
+  "keywords": [
+    "tezos",
+    "blockchain",
+    "dapp",
+    "smart",
+    "contract",
+    "granary",
+    "sandbox"
+  ],
+  "author": "matej.sima@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@stove-labs/granary": "^1.0.0-pre-alpha.20"
+  }
+}
