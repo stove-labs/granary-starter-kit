@@ -7,7 +7,12 @@
     "start": "granary node start",
     "stop": "granary node stop",
     "clean": "granary node clean && granary client clean",
-    "activate-alpha": "./activate_alpha.sh"
+    "activate-alpha": "./activate_alpha.sh",
+    "reset": "npm run stop && npm run clean && npm run init && npm run start && npm run activate-alpha",
+    "originate": "./originate.sh",
+    "get-storage": "./get_storage.sh",
+    "invoke": "./invoke.sh",
+    "bake": "./bake.sh"
   },
   "keywords": [
     "tezos",

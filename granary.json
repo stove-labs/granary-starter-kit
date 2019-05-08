@@ -1,5 +1,5 @@
 {
-	"network": "sandboxnet",
+	"network": "alphanet",
 	"dockerNetworkName": "granary",
 	"data": {
 		"basePath": ".granary",

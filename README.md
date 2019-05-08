@@ -22,4 +22,27 @@ npm run start
 
 # Activate the alpha protocol
 npm run activate-alpha
+npm run bake
 ```
+
+## Deploying the example Ligo / Michelson contract
+
+```zsh
+# Deploys the counter contract
+npm run originate
+npm run bake
+
+# Outputs 0
+npm run get-storage
+
+# Calls the contract with (Right 5); which means Increment(5) based on our Ligo contract
+npm run invoke
+npm run bake
+
+# Outputs 5
+npm run get-storage
+```
+
+## Available NPM scripts
+
+All the available scripts can be found at `package.json`

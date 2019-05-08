@@ -1,0 +1,10 @@
+[ { "name": "bootstrap1",
+    "value":
+      { "locator":
+          "unencrypted:edpkuBknW28nW72KG6RoHtYW7p12T6GKc7nAbwYX5m8Wd9sDVC9yav",
+        "key": "edpkuBknW28nW72KG6RoHtYW7p12T6GKc7nAbwYX5m8Wd9sDVC9yav" } },
+  { "name": "activator",
+    "value":
+      { "locator":
+          "unencrypted:edpkuSLWfVU1Vq7Jg9FucPyKmma6otcMHac9zG4oU1KMHSTBpJuGQ2",
+        "key": "edpkuSLWfVU1Vq7Jg9FucPyKmma6otcMHac9zG4oU1KMHSTBpJuGQ2" } } ]
