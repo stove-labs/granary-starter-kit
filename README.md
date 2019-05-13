@@ -22,7 +22,6 @@ npm run start
 
 # Activate the alpha protocol
 npm run activate-alpha
-npm run bake
 ```
 
 ## Deploying the example Ligo / Michelson contract
