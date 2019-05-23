@@ -26,6 +26,6 @@
   "author": "matej.sima@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@stove-labs/granary": "^1.0.0-pre-alpha.21"
+    "@stove-labs/granary": "^1.0.0-pre-alpha.23"
   }
 }
