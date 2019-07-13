@@ -17,10 +17,10 @@ npm i
 # Initialize granary
 npm run init
 
-# Start the node
+# Start the node (if you have permission issues, check parent directory's permissions)
 npm run start
 
-# Activate the alpha protocol
+# Activate the alpha protocol from a new terminal window
 npm run activate-alpha
 ```
 
