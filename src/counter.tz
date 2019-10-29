@@ -1,29 +1,35 @@
 { parameter (or int int) ;
   storage int ;
   code { {} ;
-         { { {} ; { {} ; { { DUP } ; CAR } } ; { {} ; {} } } ;
-           { {} ;
-             { {} ; { { { DIP { DUP } ; SWAP } } ; CDR } } ;
-             { {} ; {} } } } ;
-         {} ;
-         { { { { DIP { DUP } ; SWAP } ;
-               IF_LEFT
-                 { { { DUP ;
-                       { { DUP ;
-                           { DIP { { DIP { { DIP { DUP } ; SWAP } } ; SWAP } } ; SWAP } } ;
-                         SUB } ;
-                       {} ;
-                       DIP { { DIP { DIP { DIP { DIP { DIP { {} } } } } } ; DROP } } } ;
-                     {} ;
-                     DIP { { DIP { DIP { DIP { DIP { {} } } } } ; DROP } } } }
-                 { { { DUP ;
-                       { { DUP ;
-                           { DIP { { DIP { { DIP { DUP } ; SWAP } } ; SWAP } } ; SWAP } } ;
-                         ADD } ;
-                       {} ;
-                       DIP { { DIP { DIP { DIP { DIP { DIP { {} } } } } } ; DROP } } } ;
-                     {} ;
-                     DIP { { DIP { DIP { DIP { DIP { {} } } } } ; DROP } } } } } ;
-             NIL operation } ;
-           PAIR } ;
-         DIP { { DIP { { DIP { { DIP { {} } ; DROP } } ; DROP } } ; DROP } } } }
+         { { { { DUP } ; CAR } ;
+             { { { { DIP { DUP } ; SWAP } } ; CDR } ;
+               { PUSH unit Unit ;
+                 { { { { DIP { { DIP { DUP } ; SWAP } } ; SWAP } ;
+                       IF_LEFT
+                         { { { DUP ;
+                               { { DUP ;
+                                   { DIP { { DIP { { DIP { { DIP { DUP } ; SWAP } } ; SWAP } } ; SWAP } } ;
+                                     SWAP } } ;
+                                 SUB } ;
+                               {} ;
+                               DIP { { DIP { DIP { DIP { DIP { DIP { DIP { {} } } } } } } ;
+                                       DROP } } } ;
+                             {} ;
+                             DIP { { DIP { DIP { DIP { DIP { DIP { {} } } } } } ; DROP } } } }
+                         { { { DUP ;
+                               { { DUP ;
+                                   { DIP { { DIP { { DIP { { DIP { DUP } ; SWAP } } ; SWAP } } ; SWAP } } ;
+                                     SWAP } } ;
+                                 ADD } ;
+                               {} ;
+                               DIP { { DIP { DIP { DIP { DIP { DIP { DIP { {} } } } } } } ;
+                                       DROP } } } ;
+                             {} ;
+                             DIP { { DIP { DIP { DIP { DIP { DIP { {} } } } } } ; DROP } } } } } ;
+                     NIL operation } ;
+                   PAIR } } ;
+               {} ;
+               DIP { { DIP { { DIP { DIP { DIP { {} } } } ; DROP } } ; DROP } } } ;
+             {} ;
+             DIP { { DIP { DIP { {} } } ; DROP } } } ;
+           DIP { { DIP { {} } ; DROP } } } } }
